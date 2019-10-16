@@ -19,22 +19,22 @@
 		font-size: 40px;
 		height: auto;
 		width: 100%;
-		position: fixed;
 		overflow: hidden;
 		position: relative;
 	}
 	.footer {
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
 		text-align: center;
 		background: #1abc9c;
 		color: white;
-		font-size: 40px;
+		font-size: 10px;
 		height: auto;
 		width: 100%;
-		position: fixed;
 		overflow: hidden;
-		position: relative;
+		position: fixed;
+		bottom: 0;
+		left: 0;
 	}
 	.nav {
 		background-color: #333;
@@ -113,6 +113,31 @@
 		margin: -10px 0 15px;
 		text-transform: uppercase;
 	}
+	.action
+	{
+		position: static; /* Set the navbar to fixed position */
+		width: auto; /* Full width */
+		overflow: hidden;
+		height: auto;
+	}
+	.action ul li {
+		display: block;
+	}
+	.action ul li a{
+		float: right;
+		padding: 5px;
+		display: block;
+		width: auto;
+		height: auto;
+		color: white;
+		text-align: center;
+		text-decoration: none;
+		background-color: grey;
+	}
+	.action ul li a:hover{
+		background: #ddd;
+		color: black;
+	}
 </style>
 <body>
 	<div class="background">
@@ -132,4 +157,4 @@
 
 	</div>
 	<div class="headerBreak"></div>
-		<div class="content">
+	<div class="content">

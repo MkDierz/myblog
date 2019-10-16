@@ -20,6 +20,14 @@
 			<p>
 				<?php echo $a->artikel_isi ;?>
 			</p>
+			<br>
+			<div class="action">
+				<ul>
+					<li>
+						<a href="<?php echo base_url();?>home/edit/<?php echo $a->artikel_id;?>"><b>Edit</b></a>
+					</li>
+				</ul>
+			</div>
 		</div>
 
 	</div>

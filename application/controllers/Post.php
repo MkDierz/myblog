@@ -6,7 +6,8 @@ class Post extends CI_Controller
     public function __construct()
     {
         parent::__construct();
-        $this->load->model('artikel_m');
+        //Codeigniter : Write Less Do More
+        $this->load->model('Artikel_m');
     }
 
     public function index()
@@ -22,7 +23,7 @@ class Post extends CI_Controller
             'artikel_tanggal' => $this->input->post('tanggal'),
             'artikel_img' => $this->input->post('img')
         );
-        $this->artikel_m->artikel_post($data);
+        $this->Artikel_m->post($data);
         redirect('home');
     }
 }

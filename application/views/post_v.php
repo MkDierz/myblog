@@ -7,8 +7,11 @@
         padding-top: 10px;
         padding-bottom: 10px;
     }
-    button1{
-        padding: 25px;
+    .button submit{
+        border: 0;
+        background: none;
+        box-shadow: none;
+        border-radius: 0px;
     }
     input{
         width: 100%;

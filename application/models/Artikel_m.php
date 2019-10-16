@@ -5,7 +5,7 @@ class Artikel_m extends CI_Model
 {
 
     // INSERT
-    public function artikel_post($data)
+    public function post($data)
     {
         $this->db->insert('artikel', $data);
     }
